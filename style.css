@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    font-family: 'Bebas Neue';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(166, 176, 180);
+    justify-content: center;
+}
+
+.wrapper {
+    padding: 2em;
+    max-width: 1300px;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.card {
+    background-color: rgb(241, 10, 230);
+    color: white;
+    padding: 1em;
+}
+
+.sideBar {
+    background-color: rgb(128, 13, 122);
+    color: white;
+    padding: 1em;
+    flex-grow: .4;
+    min-height: 400px;
+}
+
+.column>* {
+    flex-basis: calc(calc(600px - 100%)*999);
+    flex-grow: 1;
+}
