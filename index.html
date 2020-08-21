@@ -1,96 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-<div class="wrapper">
-    <div class="column">   
-        
-        <div class="sideBar">
-            <h1>Sidebar</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae impedit qui consequuntur minima vero.</p>
-        </div>
 
+<body>
+    <div class="wrapper">
         <div class="column">
 
-        <div class="card">
-            <h1> Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
-        </div>
+            <div class="sideBar">
+                <h1>Sidebar</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae impedit qui consequuntur minima vero.</p>
+            </div>
 
-        <div class="card">
-            <h1> Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
-        </div>
+            <div class="column">
 
-        <div class="card">
-            <h1> Heading</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
-        </div>
+                <div class="card">
+                    <h1> Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
+                </div>
 
+                <div class="card">
+                    <h1> Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
+                </div>
 
+                <div class="card">
+                    <h1> Heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, obcaecati.</p>
+                </div>
 
-        </div>
-         
+            </div>
+
 
         </div>
 
     </div>
 
-<!--https://www.youtube.com/watch?v=fuiEYR6Hoe0-->
+    <!--https://www.youtube.com/watch?v=fuiEYR6Hoe0-->
 
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-body {
-    font-family: 'Bebas Neue';
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background-color: rgb(166, 176, 180);
-    justify-content: center;
-    
-}
-
-.wrapper {
-    padding: 2em;   
-    max-width: 1300px;
-    display: flex;
-
-}
-
-.column {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-}
-
-.card {
-    background-color: rgb(241, 10, 230);
-    color: white;
-    padding: 1em;
-}
-
-.sideBar {
-    background-color: rgb(128, 13, 122);
-    color: white;
-    padding: 1em;
-    flex-grow: .4;
-    min-height: 400px;
-    
-}
-
-
-.column > * {
-    
-    flex-basis: calc(calc(600px - 100%)*999);
-    flex-grow: 1;
-}
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body {
+            font-family: 'Bebas Neue';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: rgb(166, 176, 180);
+            justify-content: center;
+        }
+        
+        .wrapper {
+            padding: 2em;
+            max-width: 1300px;
+            display: flex;
+        }
+        
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        
+        .card {
+            background-color: rgb(241, 10, 230);
+            color: white;
+            padding: 1em;
+        }
+        
+        .sideBar {
+            background-color: rgb(128, 13, 122);
+            color: white;
+            padding: 1em;
+            flex-grow: .4;
+            min-height: 400px;
+        }
+        
+        .column>* {
+            flex-basis: calc(calc(600px - 100%)*999);
+            flex-grow: 1;
+        }
+    </style>
 
 </body>
+
 </html>
